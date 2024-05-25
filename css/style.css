@@ -87,11 +87,7 @@ a {
     padding: 20px 38px 10px 14px;
 }
 
-.input-field::placeholder {
-    color: transparent;
-}
-
-.input-field:placeholder-shown ~ .input-label {
+.input-label {
     top: 1.8rem;
     color: #8c8c8c;
     font-size: 14px;
@@ -127,13 +123,16 @@ label,
     margin: 24px 0 12px;
     padding: 0;
     color: #fff;
-    font-size: medium;
+    font-size: 16px;
+    font-weight: 500;
     background-color: #e50914;
     border-radius: 5px;
     border: none;
 }
 
-.box-info {
+.info-box {
+    color: #b3b3b3;
+    font-size: small;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,18 +142,18 @@ label,
     height: 10px;
 }
 
-.span-label {
-    color: #b3b3b3;
+.btns-box {
+    margin: 20px 78px;
+    color: #8c8c8c;
     font-size: small;
 }
 
-.info {
-    margin-top: 50px;
-    color: #b3b3b3;
-    font-size: small;
+.btns-box .btn {
+    margin: 15px 0;
 }
 
 .btn-help {
+    color: #b3b3b3;
     border-bottom: 1px solid transparent;
 }
 
@@ -164,8 +163,6 @@ label,
 
 .btn-signup {
     color: #fff;
-    font-size: small;
-    cursor: pointer;
     border-bottom: 2px solid transparent;
 }
 
@@ -173,10 +170,19 @@ label,
     border-bottom: 2px solid #fff;
 }
 
+.btn-plus {
+    color: #0080ff;
+    border-bottom: 2px solid transparent;
+}
+
+.btn-plus:hover {
+    border-bottom: 1px solid #0080ff;
+}
+
 @media (max-width: 600px) {
     .logo {
         width: 100%;
-        position: absolute;
+        height: 50px;
     }
     
     .logo-img {
@@ -190,24 +196,27 @@ label,
         border: none;
         box-shadow: none;
         border-radius: 0;
+        background-color: #000;
+        padding: 50px 0 0;
     }
  
     .form-content {
         width: 350px;
-        padding: 0 10px;
+        margin: 0;
+        padding: 0;
     }
 
-    .box-info {
+    .info-box {
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    .span-remember {
+    .remember {
         display: none;
     }
 
-    .info {
-        margin: 20px 0;
+    .btns-box {
+        margin: 0 2rem;
     }
 }
